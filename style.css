@@ -193,7 +193,7 @@ a:hover {
    }
 }
 
-@media (min-width: 677px) and (max-width: 825px) {
+@media (max-width: 825px) {
    main {
       margin: 30px;
       width: 70vw;
@@ -223,24 +223,14 @@ a:hover {
    }
 
    a {
-      width: 360px;
+      width: 300px;
    }
 }
 
 
-@media (min-width: 480px) and (max-width: 677px) {
+@media (max-width: 677px) {
    main {
-      margin: 30px;
       width: 50vw;
-      min-width: 400px;
-      height: auto;
-      grid-template-columns: 1fr;
-      grid-template-rows: 80px 420px auto auto;
-      grid-template-areas: "title"
-         "form"
-         "table"
-         "link";
-
    }
 
    h1 {
@@ -249,8 +239,6 @@ a:hover {
 
    form {
       width: 399px;
-      border-right: 0;
-      border-bottom: 1px solid #d9d9d9;
    }
 
    input[type="text"],
@@ -265,15 +253,8 @@ a:hover {
 
 @media (min-width: 320px) and (max-width: 480px) {
    main {
-      margin: 30px;
-      width: 350px;
-      height: auto;
-      grid-template-columns: 1fr;
+      min-width: 350px;
       grid-template-rows: 80px 400px auto auto;
-      grid-template-areas: "title"
-         "form"
-         "table"
-         "link";
 
    }
 
@@ -291,6 +272,10 @@ a:hover {
       width: 315px;
    }
 
+   input[type="button"] {
+      margin: auto;
+   }
+
    form {
       width: 349px;
       height: 400px;
@@ -303,5 +288,8 @@ a:hover {
       width: 250px;
    }
 
+   a {
+      width: 180px;
+   }
 
 }
