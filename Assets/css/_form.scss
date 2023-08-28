@@ -1,0 +1,86 @@
+$border: #d9d9d9;
+$bg-btn: #4e5cee;
+$font: 'Poppins', sans-serif;
+$btn-hover: #6b77fa;
+$input-focus: rgb(82, 82, 82);
+$input-border: rgb(216, 216, 216);
+
+form {
+   width: 400px;
+   height: 420px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   grid-area: form;
+   border-right: 1px solid $border;
+   padding: 20px 30px 0 30px;
+
+   label {
+      font-size: 18px;
+      font-weight: 700;
+      margin-top: 30px;
+      line-height: 40px;
+      color: #242424;
+      font-family: $font;
+   }
+}
+
+
+.input {
+   width: 320px;
+   height: 40px;
+   border: 2px solid $input-border;
+   border-radius: 3px;
+   padding: 8px;
+   outline: none;
+   font-size: 16px;
+   font-weight: 400;
+   caret-color: rgb(119, 119, 119);
+   color: rgb(76, 73, 73);
+   transition: all 0.2s ease;
+   font-family: $font;
+}
+
+.inputInvalid {
+   border-color: red;
+}
+
+.input:focus {
+   border-color: $input-focus
+}
+
+.input:hover{
+   box-shadow: 0 5px 10px -7px rgb(164, 164, 164);
+}
+
+#alert-camp-name {
+   position: absolute;
+   top: 37%;
+   opacity: 0;
+   font-size: 14px;
+   color: red;
+}
+
+#alert-camp-value {
+   @extend #alert-camp-name;
+   top: calc(37% + 108px);
+}
+
+input[type="button"] {
+   width: 190px;
+   height: 50px;
+   margin: auto 70px;
+   border: none;
+   border-radius: 7px;
+   text-align: center;
+   font-size: 18px;
+   cursor: pointer;
+   background-color: $bg-btn;
+   color: white;
+   font-family: $font;
+}
+
+input[type="button"]:hover {
+   border: 1px solid white;
+   background-color: $btn-hover;
+}

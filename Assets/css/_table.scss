@@ -1,0 +1,36 @@
+$border: rgb(189, 189, 189);
+
+table {
+   border: 1px solid $border;
+   width: 280px;
+   max-width: 320px;
+   height: 20px;
+   max-height: 390px;
+   margin: 20px auto;
+   grid-area: table;
+   border-collapse: collapse;
+   background-color: white;
+   border-spacing: 5px;
+
+   thead {
+      background-color: rgb(237, 237, 237);
+      border-bottom: 1px solid $border;
+   }
+
+   th {
+      font-size: 22px;
+   }
+
+   th:first-child,
+   td:first-child {
+      border-right: 1px solid $border;
+   }
+
+   td {
+      text-align: center;
+   }
+
+   tr {
+      border: 1px solid $border;
+   }
+}
