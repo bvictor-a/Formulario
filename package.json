@@ -1,6 +1,6 @@
 {
    "version": "2",
-   "builds": [{ "src": "./Assets/css/style.css", "use": "@vercel/static-build" }],
-   "routes": [{ "src": "/(.*)", "dest": "./Assets/css/style.css/$1" }]
+   "builds": [{ "src": "./assets/css/style.css", "use": "@vercel/static-build" }],
+   "routes": [{ "src": "/(.*)", "dest": "./assets/css/style.css/$1" }]
  }
  
